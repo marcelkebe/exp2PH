@@ -1,7 +1,7 @@
 \section{Lineare Regression}
     In einem Versuchteil wurden die folgenden Daten für Liniennummer $N_{Linie}$
     und Spannung $U$ aufgenommen.
-    Die Liniennummern $N_{Linie}$ sollen dabei gemäß der Formel in Abstände $D$ umgerechnet werden 
+    Die Liniennummern $N_{Linie}$ sollen dabei gemäß der Formel \ref{eqn:formel} in die Abstände $D$ umgerechnet werden. 
     \begin{equation}
         D=(N_{Linie}-1) \cdot 6 \si{mm.}
         \label{eqn:formel}
@@ -24,12 +24,12 @@
             9&8.3&48\\
             \bottomrule
         \end{tabular}
-        \caption{Messdaten Liniennummer $N_{Linie}$ und Spannung $U$ mit berechneten
+        \caption{Messdaten, Liniennummer $N_{Linie}$ und Spannung $U$ mit berechneten
             Abständen $D$ nach Gl. \ref{eqn:formel}}
         \label{tab:tabelle}
     \end{table}
 
-    Trägt man nun die Spannung $U$ gegen den Abstand $D$ auf,so folgt für eine lineare 
+    Trägt man nun die Spannung $U$ gegen den Abstand $D$ auf, so folgt für eine lineare 
     Regression nach 
     \begin{equation}
         U=m\cdot D + n,
@@ -37,12 +37,12 @@
     \end{equation}
     für die Steigung $m$ und den y-Achsenabschnitt $n$
     \begin{align*}
-        m&=(0.581\pm0.007) \si{\volt\per\mm}\\
-        n&=(-19.68\pm0.19) \si{V}\\.
+        m&=(0.581\pm0.007) \si{\volt\per\mm},\\
+        n&=(-19.68\pm0.19) \si{V}.\\
     \end{align*}
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\textwidth]{plot.pdf}
-        \caption{In der Grapik wird die Spannung $U$ gegen den Abstand $D$ aufgetragen, sowie 
-        die lineare Regression nach der Geradengleichung \ref{eqn:gerade} und derer Parameter.}
+        \caption{In der Grafik wird die Spannung $U$ gegen den Abstand $D$ aufgetragen, sowie 
+        die lineare Regression nach der Geradengleichung \ref{eqn:gerade} mit derer Parameter.}
     \end{figure}

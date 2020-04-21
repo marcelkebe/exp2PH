@@ -8,11 +8,14 @@
 \subsection{Standardabweichung}
     Die Standartabweichung $\sigma$ gibt an, wie weit jeder Wert eines Datensatzes im durchschnitt von 
     dem Mittelwert abweicht.\\
-    Sie beschribt somit eine Diffuson der Messwerte, um den Mittelwert. Je größer der Wert, desto
-    mehr streuen die Werte.
+    Sie beschreibt somit eine Diffuson der Messwerte, um den Mittelwert. Je größer der Wert, desto
+    größer ist die Streuung der Werte um den Mittelwert.
     \begin{equation*}
         \sigma = \sqrt{\frac{\sum_{i=0}^n(x_i-\mu)^2}{n}}
     \end{equation*}
 \subsection{Unterscheidung zwischen Streuung der Messwerte und der Fehler des Mittelwerts}
-    Sind die gemessenen Größen fehlerbehaftet, so ist es auch der Mittelwert. Man spricht dann vom 
-    Fehler des Mittelwerts.\\
+    Mit Streuung der Messwerte ist hiermit die Standardabweichung gemeint, also der Fehler der Einzelmessung.
+    Der (mittlere) Fehler des Mittelwertes $\Delta \mu$ unterschiedet sich dabei um den Faktor $1/\sqrt{n}$ von diesem, sodass
+    \begin{equation*}
+        \Delta \mu = \frac{\sigma}{\sqrt{n}}.
+    \end{equation*}
