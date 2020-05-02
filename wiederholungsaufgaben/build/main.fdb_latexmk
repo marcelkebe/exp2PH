@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/main"] 1587469192 "build/main.bcf" "build/main.bbl" "build/main" 1587469467
-  "build/main.bcf" 1587469467 99120 78c5ab7595d8543ffef9e0dfe6bfdcef "lualatex"
+["biber build/main"] 1587469192 "build/main.bcf" "build/main.bbl" "build/main" 1587969340
+  "build/main.bcf" 1587969340 99120 78c5ab7595d8543ffef9e0dfe6bfdcef "lualatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1587469461 "main.tex" "build/main.pdf" "main" 1587469467
+["lualatex"] 1587969334 "main.tex" "build/main.pdf" "main" 1587969340
   "/home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
   "/home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf" 1255129361 111536 ae9d1b331000d544f47e5223081b7b54 ""
@@ -186,18 +186,18 @@
   "/home/smmakebe/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/xitsmath-regular.luc" 1570362224 411899 0cec6704c2abebfc8a47e373880f7029 ""
   "/home/smmakebe/.local/texlive/2019/texmf-var/tex/generic/config/language.dat" 1569194369 6580 53e906abc25a8a38c55389eae967ddb7 ""
   "/home/smmakebe/.local/texlive/2019/texmf-var/web2c/luatex/lualatex.fmt" 1569194425 1382814 ac446ff05e90c2f60562f2123936b313 ""
-  "build/main.aux" 1587469467 5640 16325a74b41101e6d30a578eb7d347f8 "lualatex"
+  "build/main.aux" 1587969340 2124 1042ef93770804b45f679f279091d702 "lualatex"
   "build/main.bbl" 1587469193 466 f7f239c736cf01ac6ce7bd829f9b3c7b "biber build/main"
-  "build/main.run.xml" 1587469467 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
-  "content/aufgabe1.tex" 1587468667 1085 25189eaa89ebae06d7d6312407626475 ""
-  "content/aufgabe2.tex" 1587468983 1184 23162a92f0e09c0a7ae57581f8d0d438 ""
-  "content/aufgabe3.tex" 1587467835 1686 ba2563c066799d675f5462cc71c8561b ""
+  "build/main.run.xml" 1587969340 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
+  "content/aufgabe1.tex" 1587969333 1164 b242d36faf31df06897d80b211e33ce8 ""
+  "content/aufgabe2.tex" 1587969292 1236 cfa567c74f2e2f0e3c0e8c8f9dd3b3a8 ""
+  "content/aufgabe3.tex" 1587969080 1729 2a0f9e5189f5b1952894dcd9e2ca48e3 ""
   "header.tex" 1585727267 3453 6369f2ed959dc70787080f7a8ac2c044 ""
   "main.tex" 1587469460 782 53afd9933be9ba27d5935152695798e0 ""
   "plot.pdf" 1587387941 15327 9fa993cf4022ba1e00c58639d1b0430f ""
   (generated)
   "build/main.aux"
-  "build/main.run.xml"
-  "build/main.pdf"
   "build/main.log"
+  "build/main.run.xml"
   "build/main.bcf"
+  "build/main.pdf"

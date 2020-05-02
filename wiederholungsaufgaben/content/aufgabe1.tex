@@ -1,19 +1,20 @@
-\section{Aufgabe 1 - Bedeutung der Begriffe}
-\subsection{Mittelwert}
-    Der Mittelwert $\mu$ eines Datensatzes, ist dessen im durchschnitt angenommener Wert.
+\section*{Aufgabe 1 - Bedeutung der Begriffe}
+\subsection*{Mittelwert}
+    Der Mittelwert $\mu$ eines Datensatzes, ist der Wert, der im Durchschnitt gemessen wurde.
 
     \begin{equation*}
-        \mu=\frac{1}{n}\sum_{i=0}^n x_i
+        \mu=\frac{1}{n}\sum_{i=1}^n x_i
     \end{equation*}
-\subsection{Standardabweichung}
+    n ist dabei die Anzahl der betrachteten Einzelmessungen $x$.
+\subsection*{Standardabweichung}
     Die Standartabweichung $\sigma$ gibt an, wie weit jeder Wert eines Datensatzes im durchschnitt von 
-    dem Mittelwert abweicht.\\
+    dem Mittelwert $\mu$ abweicht.\\
     Sie beschreibt somit eine Diffuson der Messwerte, um den Mittelwert. Je größer der Wert, desto
     größer ist die Streuung der Werte um den Mittelwert.
     \begin{equation*}
-        \sigma = \sqrt{\frac{\sum_{i=0}^n(x_i-\mu)^2}{n}}
+        \sigma = \sqrt{\frac{\sum_{i=1}^n(x_i-\mu)^2}{n}}
     \end{equation*}
-\subsection{Unterscheidung zwischen Streuung der Messwerte und der Fehler des Mittelwerts}
+\subsection*{Unterscheidung zwischen Streuung der Messwerte und der Fehler des Mittelwerts}
     Mit Streuung der Messwerte ist hiermit die Standardabweichung gemeint, also der Fehler der Einzelmessung.
     Der (mittlere) Fehler des Mittelwertes $\Delta \mu$ unterschiedet sich dabei um den Faktor $1/\sqrt{n}$ von diesem, sodass
     \begin{equation*}

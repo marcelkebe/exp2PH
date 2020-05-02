@@ -1,4 +1,4 @@
-\section{Aufgabe 2 - Volumenberechnung}
+\section*{Aufgabe 2 - Volumenberechnung}
     Berechnen des Volumens eines Holzylinders mit dem Außenradius $R_a$, Innenradius $R_i$ und
     der Höhe $h$:
     \begin{align*}
@@ -8,9 +8,9 @@
     \end{align*}
     Da die Größen fehlerbehaftet sind, erfolgt die allgmeiner Fehlerfortpflanzung nach Gauß
     \begin{equation*}
-        \Delta f(x_i)=\sqrt{\sum_{i=0}^n \left(\frac{df}{dx_i}\cdot \Delta x_i \right) ^2},
+        \Delta f(x_i)=\sqrt{\sum_{i=1}^n \left(\frac{df}{dx_i}\cdot \Delta x_i \right) ^2},
     \end{equation*}
-    und spezifisch für den Holzylinder mit
+    womit sich spezifisch für den Holzylinder ergibt
     \begin{align*}
         \Delta V &= \sqrt{\left(\frac{dV}{dR_{a}}\cdot \Delta R_{a}\right)^2 + \left(\frac{dV}{dR_{i}}\cdot \Delta R_{i}\right)^2 + \left(\frac{dV}{dh}\cdot \Delta h\right)^2},\\\\
         \Delta V &= \sqrt{(2 \pi h R_a \Delta R_a)^2 + (-2 \pi h R_i \Delta R_i)^2 + (\pi (R_a^2-R_i^2) \cdot \Delta h)^2} .
@@ -21,5 +21,6 @@
     \end{equation*}
     ergibt sich schließlich das Gesamtvolumen $V_{ges}$
     \begin{equation*}
-        V_{ges}=(2500\pi \pm 732\pi)\; \si{cm^3}.
+        V_{ges}=(2500\pi \pm 732\pi)\; \si{cm^3},
     \end{equation*}
+    mit einem  Fehler von $\pm 29,28$\%.
