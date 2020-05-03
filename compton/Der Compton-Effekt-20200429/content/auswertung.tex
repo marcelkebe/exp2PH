@@ -1,21 +1,114 @@
 \newpage
 \section{Auswertung}
+Die charakteristischen Strahlung/Peaks im Röntgenspektrum sind abbhängig vom 
+verwendeten Annodenmaterial Kupfer. Die Linien befinden sich bei \cite{literatur}
+\begin{align*}
+    K_{\alpha}=8,038\si{keV},\\
+    K_{\beta}=8,905\si{keV},
+\end{align*}
+und somit liegen sie bei den Wellenlängen (Gl. \ref{eqn:energie})
+\begin{align*}
+    \lambda_{\alpha} =& \frac{hc}{E_{K_{\alpha}}}\approx 1,6\cdot 10^{-10}\si{m},\\
+    \lambda_{\beta}  =& \frac{hc}{E_{K_{\beta}}}\approx 1,4 \cdot 10^{-10}\si{m} .
+\end{align*}
+Dieser Wellenlänge wird nach Gl. \ref{eqn:bragg} und Gl. \ref{eqn:energie} der Braggwinkel $\alpha$ 
+mit der Gitterkonstante $d=201,4\cdot 10^{-12}$ von
+\begin{align*}
+    \alpha_{K_{\alpha}}=&sin^{-1}\left(\frac{hc}{2d \cdot E_{K_{\alpha}}}\cdot\right)\approx 23°,\\
+    \alpha_{K_{\beta}}=&sin^{-1}\left(\frac{hc}{2d \cdot E_{K_{\beta}}}\cdot\right)\approx 21°,
+\end{align*}
+zugeordnet.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{plots/E_int.pdf}
-    \caption{}
+    \includegraphics[width=0.65\textwidth]{plots/welll_int.pdf}
+    \caption{Die Impulsrate $I_0$ gegen den Braggwinkel $\alpha$ und die 
+    Röntgenwellenlänge $\lambda$ aufgetragen. Es zeigten sie die Peaks der 
+    charakteristischen Strahlung, sowie der Berg der Bremsstrahlung, der ab einem 
+    Winkel $\alpha=8°$ bis zum ersten Peak verläuft. Die Beschleunigungsspannung 
+    beträgt $35$kV.}
+    \label{fig:braggw}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{plots/welll_int.pdf}
-    \caption{}
+    \includegraphics[width=0.65\textwidth]{plots/E_int.pdf}
+    \caption{Das Energiespektrum der Röntgenstrahlung. Es zeigen sich
+    die charakteristischen Röntgenstrahlen bei $K_{\alpha}=8,05$keV und 
+    $K_{\beta}=8,92$keV}
+    \label{fig:energie}
 \end{figure}
 
-\begin{figure}
+
+Man entnimmt den Messdaten und aus Abb. \ref{fig:energie} und Abb. \ref{fig:braggw} 
+folgende charakteristische Strahlungswerte
+\begin{align*}
+    K_{\alpha}=&8,05keV &\alpha_{K\alpha}=&22,5°& \lambda_{K\alpha}=&154,14\si{pm}\\ 
+    K_{\beta}=&8,92keV &\alpha_{K\beta}=&20,2° &\lambda_{K\beta}=&139,09\si{pm}\\
+\end{align*}
+
+
+
+\subsection{Wellenabhängigkeit der Tansmission}
+Um eine Aussage über die Abhängigkeit der Transmission von der Wellenlänge
+zu machen, müssen die gemessenen Impulsraten $N_0$ und $N_1$ über Gl. \ref{eqn:totzeit}
+mit der Totzeit $\tau=90\mu$s korrigiert werden. Die Transmission ergibt sich dann aus dem Quotienten
+von $I_0$ und $I_1$
+\begin{equation}
+    T_0=\frac{I_1}{I_0}.
+    \label{eqn:trans}
+\end{equation}
+Trägt man nun die aus den Braggwinkel mithilfe der Bragg'schen Reflexion
+berechneten Wellenlänge $\lambda$ gegen die Transmission $T$ auf, so folgt
+nach linearer Regression über die Geradengleichung
+\begin{equation*}
+    T=m\cdot \lambda + n,
+\end{equation*}
+mit der Steigung $m$ und dem y-Achsenabschnitt $n$
+\begin{align*}
+    m=&(-15.20\pm0.23)\cdot 10^{-9}\si{W\per\m^3},\\ 
+    n=&(1.231\pm0.014)\cdot 10^{-12}\si{W\per\m^2},
+\end{align*}
+die Abhängigkeit $T(\lambda).$
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{plots/trans.pdf}
-    \caption{}
+    \includegraphics[width=0.65\textwidth]{plots/trans.pdf}
+    \caption{Gezeigt ist die prozentuale Transmission $T$, die der Wellenlänge $\lambda$
+    gegenübergestellt ist. Die lineare Regression zeigt den Zusammenhang $T(\lambda)$.
+    Verwendet wurde ein Aluminium Absorber.}
 \end{figure}
+\label{sub:trans}
+
+
+\subsection{Die Compton-Wellenlänge}
+Bei gleichem Streuwinkel wurden nun die Intensität für compton-gestreute Photonen
+$I_{gestreut}$ mit Al-Absorber,nicht gestreute Photonen $I_{ungestreut}$, sowie 
+die Intensität $I_0$ ohne Absorber gemessen.
+Nun kann über die Transmission und den bereitgestellen Zusammenhang (vgl. Abschnitt \ref{sub:trans})
+$T(\lambda)$ die Wellenlänge der Compton-Strahlung bestimmt werden.
+Die Poisson verteilten Röntgen-Quanten mit der Messunsicherheit\\
+\begin{align*}
+    \Delta N= \sqrt{N},
+\end{align*}
+ergeben für die Impulse
+\begin{align*}
+    I_0=(2730\pm50)\si{Impulse},\\
+    I_{gestreut}=(1024\pm32)\si{Impulse},\\
+    I_{ungestreut}=(1180\pm34)\si{Impulse}.
+\end{align*}
+Es ergibt sich für die Transmission T
+\begin{align*}
+    T_{ungestreut}=\frac{I_{ungestreut}}{I_{0}}=(0.432\pm0.015)\%,\\
+    T_{gestreut}=\frac{I_{gestreut}}{I_{0}}=(0.375\pm0.014)\%.
+\end{align*}
+Aus dem Zusammenhang $T(\lambda)$ folgt dafür
+\begin{align*}
+    \lambda_{ungestreut}=(52.6\pm1.6)\si{pm},\\
+    \lambda_{gestreut}=(56.3\pm1.5)\si{pm}.
+\end{align*}
+Es folgt somit für die Compton-Wellenlänge $\lambda_C$ nach \ref{eqn:compton} mit
+einem Streuwinke von $90$°
+\begin{equation*}
+    \lambda_C=\lambda_{gestreut}-\lambda_{ungestreut}=(3.8\pm1.1)\si{pm}.
+\end{equation*}
 \label{sec:Auswertung}
