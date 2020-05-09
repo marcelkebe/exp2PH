@@ -3,13 +3,13 @@
 Die charakteristischen Strahlung/Peaks im Röntgenspektrum sind abbhängig vom 
 verwendeten Annodenmaterial Kupfer. Die Linien befinden sich bei \cite{literatur}
 \begin{align*}
-    K_{\alpha}=8,038\si{keV},\\
-    K_{\beta}=8,905\si{keV},
+    K_{\alpha}=8,038\;\si{keV},\\
+    K_{\beta}=8,905\;\si{keV},
 \end{align*}
-und somit liegen sie bei den Wellenlängen (Gl. \ref{eqn:energie})
+und somit liegen sie bei den Wellenlängen (nach Gl. \ref{eqn:energie})
 \begin{align*}
-    \lambda_{\alpha} =& \frac{hc}{E_{K_{\alpha}}}\approx 1,6\cdot 10^{-10}\si{m},\\
-    \lambda_{\beta}  =& \frac{hc}{E_{K_{\beta}}}\approx 1,4 \cdot 10^{-10}\si{m} .
+    \lambda_{\alpha} =& \frac{hc}{E_{K_{\alpha}}}\approx 160\;\si{pm},\\
+    \lambda_{\beta}  =& \frac{hc}{E_{K_{\beta}}}\approx 140 \;\si{pm} .
 \end{align*}
 Dieser Wellenlänge wird nach Gl. \ref{eqn:bragg} und Gl. \ref{eqn:energie} der Braggwinkel $\alpha$ 
 mit der Gitterkonstante $d=201,4\cdot 10^{-12}$ von
@@ -34,8 +34,8 @@ zugeordnet.
     \centering
     \includegraphics[width=0.65\textwidth]{plots/E_int.pdf}
     \caption{Das Energiespektrum der Röntgenstrahlung. Es zeigen sich
-    die charakteristischen Röntgenstrahlen bei $K_{\alpha}=8,05$keV und 
-    $K_{\beta}=8,92$keV}
+    die charakteristischen Röntgenstrahlen bei $K_{\alpha}=8,05\;$keV und 
+    $K_{\beta}=8,92\;$keV}
     \label{fig:energie}
 \end{figure}
 
@@ -43,8 +43,8 @@ zugeordnet.
 Man entnimmt den Messdaten und aus Abb. \ref{fig:energie} und Abb. \ref{fig:braggw} 
 folgende charakteristische Strahlungswerte
 \begin{align*}
-    K_{\alpha}=&8,05keV &\alpha_{K\alpha}=&22,5°& \lambda_{K\alpha}=&154,14\si{pm}\\ 
-    K_{\beta}=&8,92keV &\alpha_{K\beta}=&20,2° &\lambda_{K\beta}=&139,09\si{pm}\\
+    K_{\alpha}=&8,05\;\si{keV} &\alpha_{K\alpha}=&22,5°& \lambda_{K\alpha}=&154,14\;\si{pm}\\ 
+    K_{\beta}=&8,92\;\si{keV} &\alpha_{K\beta}=&20,2° &\lambda_{K\beta}=&139,09\;\si{pm}\\
 \end{align*}
 
 
@@ -58,16 +58,16 @@ von $I_0$ und $I_1$
     T_0=\frac{I_1}{I_0}.
     \label{eqn:trans}
 \end{equation}
-Trägt man nun die aus den Braggwinkel mithilfe der Bragg'schen Reflexion
-berechneten Wellenlänge $\lambda$ gegen die Transmission $T$ auf, so folgt
+Trägt man nun die, aus den Braggwinkel mithilfe der Bragg'schen Reflexion
+berechneten, Wellenlänge $\lambda$ gegen die Transmission $T$ auf, so folgt
 nach linearer Regression über die Geradengleichung
 \begin{equation*}
     T=m\cdot \lambda + n,
 \end{equation*}
 mit der Steigung $m$ und dem y-Achsenabschnitt $n$
 \begin{align*}
-    m=&(-15.20\pm0.23)\cdot 10^{-9}\si{W\per\m^3},\\ 
-    n=&(1.231\pm0.014)\cdot 10^{-12}\si{W\per\m^2},
+    m=&(-15,20\pm0,23)\cdot 10^{-9}\;\si{\m^{-1}},\\ 
+    n=&(1,231\pm0,014)\cdot 10^{-12},
 \end{align*}
 die Abhängigkeit $T(\lambda).$
 \begin{figure}[H]
@@ -81,34 +81,38 @@ die Abhängigkeit $T(\lambda).$
 
 
 \subsection{Die Compton-Wellenlänge}
-Bei gleichem Streuwinkel wurden nun die Intensität für compton-gestreute Photonen
-$I_{gestreut}$ mit Al-Absorber,nicht gestreute Photonen $I_{ungestreut}$, sowie 
-die Intensität $I_0$ ohne Absorber gemessen.
-Nun kann über die Transmission und den bereitgestellen Zusammenhang (vgl. Abschnitt \ref{sub:trans})
-$T(\lambda)$ die Wellenlänge der Compton-Strahlung bestimmt werden.
+Bei gleichem Streuwinkel wurden nun die Intensität für die compton-gestreuten Photonen
+$I_{gestreut}$ mit Al-Absorber, nicht gestreuten Photonen $I_{ungestreut}$, sowie 
+die Intensität $I_0$ ohne Absorber gemessen.\\
+Nun kann über die Transmission und den bereitgestellen Zusammenhang $T(\lambda)$ (vgl. Abschnitt \ref{sub:trans})
+die Wellenlänge der Compton-Strahlung bestimmt werden.\\
 Die Poisson verteilten Röntgen-Quanten mit der Messunsicherheit\\
 \begin{align*}
     \Delta N= \sqrt{N},
 \end{align*}
 ergeben für die Impulse
 \begin{align*}
-    I_0=(2730\pm50)\si{Impulse},\\
-    I_{gestreut}=(1024\pm32)\si{Impulse},\\
-    I_{ungestreut}=(1180\pm34)\si{Impulse}.
+    I_0=(2730\pm50)\;\si{Impulse},\\
+    I_{gestreut}=(1024\pm32)\;\si{Impulse},\\
+    I_{ungestreut}=(1180\pm34)\;\si{Impulse}.
 \end{align*}
 Es ergibt sich für die Transmission T
 \begin{align*}
-    T_{ungestreut}=\frac{I_{ungestreut}}{I_{0}}=(0.432\pm0.015)\%,\\
-    T_{gestreut}=\frac{I_{gestreut}}{I_{0}}=(0.375\pm0.014)\%.
+    T_{ungestreut}=\frac{I_{ungestreut}}{I_{0}}=(0,432\pm0,015),\\
+    T_{gestreut}=\frac{I_{gestreut}}{I_{0}}=(0,375\pm0,014).
 \end{align*}
-Aus dem Zusammenhang $T(\lambda)$ folgt dafür
+Aus dem Zusammenhang $T(\lambda)$ folgt dafür mit
+\begin{equation*}
+    \Delta \lambda_i=\sqrt{\left(\frac{1}{m}\cdot\Delta T_i\right)^2+\left(\frac{1}{m}\Delta n\right)^2+\left((n-T_i)\cdot \frac{1}{m^2} \cdot \Delta m \right)^2},
+\end{equation*}
 \begin{align*}
-    \lambda_{ungestreut}=(52.6\pm1.6)\si{pm},\\
-    \lambda_{gestreut}=(56.3\pm1.5)\si{pm}.
+    \lambda_{ungestreut}=(52,6\pm1,6)\;\si{pm},\\
+    \lambda_{gestreut}=(56,3\pm1,5)\;\si{pm}.
 \end{align*}
 Es folgt somit für die Compton-Wellenlänge $\lambda_C$ nach \ref{eqn:compton} mit
 einem Streuwinke von $90$°
-\begin{equation*}
-    \lambda_C=\lambda_{gestreut}-\lambda_{ungestreut}=(3.8\pm1.1)\si{pm}.
-\end{equation*}
+\begin{equation}
+    \lambda_C=\lambda_{gestreut}-\lambda_{ungestreut}=(3,8\pm1,1)\;\si{pm}.
+    \label{eqn:welln}
+\end{equation}
 \label{sec:Auswertung}

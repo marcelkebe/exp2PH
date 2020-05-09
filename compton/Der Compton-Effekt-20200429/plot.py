@@ -23,17 +23,18 @@ fig, ax1 = plt.subplots()
 fig.subplots_adjust(top=0.9)
 
 color="tab:red"
-ax1.set_xlabel("Braggwinkel $\Theta\;/\;$°")
+ax1.set_xlabel("Wellenlänge $\lambda\;/\;pm$")
 ax1.set_ylabel("Impulsrate $I_0\;/\;Impuls/s$")
-ax1.set_xlim(8,25)
+ax1.plot(lamdbae/10**(-12),R,"xb",label="Messwerte")
+ax1.plot(lamdbae/10**(-12),R,"-k",label="Spektrumverlauf")
+ax1.set_xlim(5.605892506671436*10**(-11)/10**(-12),1.7023063582915372*10**(-10)/10**(-12))
+plt.legend(loc="best")
 ax1.tick_params(axis="x")
 
 ax2=ax1.twiny()
-ax2.set_xlim(5.605892506671436*10**(-11)/10**(-12),1.7023063582915372*10**(-10)/10**(-12))
-ax2.set_xlabel("Wellenlänge $\lambda\;/\;pm$")
+ax2.set_xlim(8,25)
+ax2.set_xlabel("Braggwinkel $\Theta\;/\;$°")
 #ax2.plot(a,R)
-ax2.plot(lamdbae/10**(-12),R,"xb",label="Messwerte")
-ax2.plot(lamdbae/10**(-12),R,"-k",label="Spektrumverlauf")
 ax1.tick_params(axis="x")
 
 def make_patch_spines_invisible(ax):
@@ -51,7 +52,6 @@ def make_patch_spines_invisible(ax):
 #p3 = par2.plot(a,E)
 #lines =[p3]
 
-plt.legend(loc="best")
 plt.savefig("plots/welll_int.pdf")
 #plt.show()
 plt.close()
@@ -62,7 +62,7 @@ plt.plot(E/1000,R,"-k",label="Spektrumsverlauf")
 plt.plot(E[peaks[0]]/1000,R[peaks[0]],"or",label=f"$K_b=${round(E[peaks[0]]/1000,2)}keV")
 plt.plot(E[peaks[1]]/1000,R[peaks[1]],"ob",label=f"$K_a=${round(E[peaks[1]]/1000,2)}keV")
 plt.xlim(7.5,10)
-plt.title("Charakteristische Röntgenstrahlung")
+#plt.title("Charakteristische Röntgenstrahlung")
 plt.xlabel("Energie $E\;/\;keV$")
 plt.ylabel("Impulsrate $I_0\;/\;Impuls/s$")
 plt.legend(loc="best")
@@ -77,7 +77,7 @@ aA,RA=np.genfromtxt("compton/ComptonAl.txt",unpack=True)
 t=200#s
 No=unp.uarray(Ro,np.sqrt(Ro))
 NA=unp.uarray(RA,np.sqrt(RA))
-tau=90*10**(-9)#s
+tau=90*10**(-6)#s
 Io=No/(1-tau*(No))
 IA=NA/(1-tau*(NA))
 T=IA/Io
@@ -96,7 +96,7 @@ print(f"""
 
 plt.plot(lamdba/10**(-12),funktion(lamdba/10**(-12),params[0],params[1]),"--r",label="Lineare Regression")
 plt.plot(lamdba/10**(-12),noms(T),"xb",label="Messwerte")
-plt.title("Transmission $T(\lambda)$")
+#plt.title("Transmission $T(\lambda)$")
 plt.xlabel("Wellenlänge $\lambda\;/\;$pm")
 plt.ylabel("Transmission $T\;/\;$%")
 plt.legend(loc="best")
@@ -125,7 +125,7 @@ print(f"""
     lambda1 (ungest. R.)\t ({getlambda(T1)})\tpm
     lambda2 (gest. R.)\t\t ({getlambda(T2)})\tpm
     delta \t\t\t ({getlambda(T2)-getlambda(T1)})\tpm
-    delta vergl. \t\t ({round(h/me*c,2)})\tpm
+    fehler \t\t\t ({(abs(2.4-(getlambda(T2)-getlambda(T1)))/2.4)*100})
     
     I=0 {I0}
     Iung {I1}
@@ -143,8 +143,7 @@ print(f"""
 
 k=len(lamdba)
 x=0
-while x<=k:
-    print(f"""
-        {ao[x]} & {lamdba[x]} & {No[x]} & {noms(Io[x])} & {NA[x]} & {noms(IA[x])} & {noms(T[x])}
-    """)
+while x<=k-1:
+    print(f"""{ao[x]} & {lamdba[x]} & {No[x]} & {noms(Io[x])} & {NA[x]} & {noms(IA[x])} & {noms(T[x])}""")
     x+=1
+
