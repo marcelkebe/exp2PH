@@ -1,96 +1,89 @@
 \newpage
 \section*{Zielsetzung}
-Es soll die Compton-Wellenlänge $\lambda_c$ des Elektrons bestimmt werden.
+Aufnehmen und analysieren von dem Emissionsspektrum einer CU-
+Röntgenröhre und verschiedener Absorbtionsspektren.
 \section{Theorie}
-\subsection{Die Compton-Strahlung}
-\label{sec:theorie}
-Trifft Röntgenlicht mit einer Wellenlänge $\lambda_1$ auf ein schwach gebunden Elektron, so enthält das gestreute Licht eine neue 
-größere Wellenlänge $\lambda_2$, da das Photon einen Teil seiner Energie durch den elastischen Stoß
-an das Elektron übertragten hat. 
-Dies folgt aus 
+\subsection{Erzeugung Röntgenstrahlung}
+Innerhalb einer evakuierten Röhre werden Elektronen aus einer Glühkathode
+auf eine Anode hin beschleunigt.\\ 
+Die Energie der Strahlung kann mithilfe der Bragg-Reflexion ermittelt werden.
+Durch Beugung an einem dreidimsensionalen Gitter (LiF-Kristall) mit der Gitterkonstante $d$ 
+entsteht eine konstruktive Interferenz bei einem Braggwinkel $\Theta$. Durch die Bragg-Bedingung
 \begin{equation}
-    E_{Photon}=\frac{hc}{\lambda}.
-    \label{eqn:energie}
-\end{equation}
-Zusätzlich wird diese Wellenenlänge um den Winkel $\Theta$ abgelenkt.
-Die Wellenlängenverschiebung $\Delta \lambda$ und der Streuungswinkel 
-$\Theta$ weisen folgenden Zusammhang auf
-\begin{equation}
-    \Delta \lambda = \lambda_2 - \lambda_1 =\frac{h}{m_e c}\left(1-cos(\Theta)\right)=\lambda_c \cdot \left(1-cos(\Theta)\right).
-    \label{eqn:compton}
-\end{equation}
-Die Konstante $\lambda_c$ nennt man die Compton-Wellenlänge des Elektrons.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\textwidth]{compton/compton_effekt.jpg}
-    \caption{Darstellung des Compton Effekts mit einem einfallendem Photon, dass
-    auf ein Elektron trifft. Das gestreute Photon wird um den Winkel $\Theta$
-    abgelenkt.\cite[1]{anleitung}}
-\end{figure}
-Man spricht von einer Reflexion bei $\Theta=\pi$, dabei wird die Wellenlängendifferenz
-$\Delta \lambda$ maximal (vgl. Gl. \ref{eqn:compton}).
-
-Der Compton-Effekt kann bei allen Photonen verschiedenster Energien beobachtet werden.
-Die Wahrscheinlichkeit für das Auftetten ist allerdings bei hochenergetische Photonen wie
-Rönten- oder $\gamma$-Strahlung am höchsten.
-\newpage
-\subsection{Erzeugung der Röntenstrahlung}
-Zur Erzeugung nutze man die Eigenschaft der Bremstrahlung sowie die charakteristische
-Röntgenstrahlung.\\ 
-Eine Glühkathode emittiert dabei Elektronen, die durch eine evakuierte Röhre auf 
-eine Annode hin beschleunigt werden. 
-Beim Auftreffen auf die Annode wird Röntgenstrahlung ausgesendet.
-Das ausgesendete Spektrum besteht aus charakteristischen Peaks, welche vom
-Anodenmaterial abhängig sind und einem kontinuierlichen Bremsspektrum.
-
-\subsubsection*{Charakteristische Strahlung}
-Die Charakteristische Strahlung hängt vom Annodenmaterials ab. Durch das Auftreffen
-der beschleunigten Elektron kann eine Energieübertragung an die im Material gebunden Elektronen stattfinden.
-Die gebunden Elektronen können darauf hin auf ein höheres Energieniveau angeregt werden bevor 
-sie wieder auf ein niedriges Energienivea zurückspringen. Dabei wird Strahlung frei,
-dessen Energie der Energiedifferenz der verschiedenen Niveaus entspricht.
-
-\subsubsection*{Bremsstrahlung}
-Wird ein Elektron mithilfe eines elektrischen Feldes abgebremst, erfährt es eine
-Beschleunigung und verliert somit kinetische Energie. Diese Energie wird in Form von
-Röntgenphotonen ausgesendet. Hierbei bildet sich ein kontinuierliches Spektrum aus.
-
-
-\subsection{Bragg-Reflektion (Bestimmung der Röntgenwellenlänge)}
-Über die Bragg'sch Reflektion kann die Energie $E$ der Röntgenstrahlung analysiert werden.
-Durch die Beugung der Strahlung an einem dreidimensionalen Gitter mit dem Gitterkonstante $d$ 
-entsteht beim Glanzwinkel $\alpha$ eine konstruktive Interferenz. Die Wellenlänge bestimmt 
-sich nun über den Zusammenhang
-\begin{equation}
-    2 d sin(\alpha)=n \lambda,
+    2 d sin(\Theta)=n\lambda,
     \label{eqn:bragg}
 \end{equation}
-wobei $n$ die Beugungsordnung beschreibt.
-\label{sub:bragg}
-
+ergibt sich die Wellenlänge. n ist dabei die Beugungsordunung.
 \begin{figure}
     \centering
-    \includegraphics[width=0.35\textwidth]{plots/bragg.jpg}
-    \caption{Die Bragg'sche Reflexion mit Braggwinkel $\alpha$ und 
-    Gitterkonstante $d$.\cite[2]{anleitung}
-    }
+    \includegraphics[width=0.3\textwidth]{plots/bragg.jpg}
+    \caption{Darstellung der Bragg-Reflexion an einem Gitter mit der
+    Gitterkonstante $d$ und dem Bragg-Winkel $\alpha$.\cite[3]{anleitung}}
 \end{figure}
-
-
-\subsection{Geiger-Müller-Zählrohr}
-Um die Impulsrate zu bestimmen, wird ein Geiger-Müller-Zählrohr verwendet.
-Grundlegend besteht es aus einem mit Gas gefülltem Zylinder, dessen Wände die Kathode bilden.
-Trifft nun isonisiernde Strahlung ein, so reagierte diese mit den Gasatomen. 
-Die frei werdenen Elektronen werden durch die Annode als Impuls regestriert.
-Damit das Gasatom wieder eine neutrale Ladung erhält, muss es zur Stabanode wandern.
-Daraus folgt das Problem, wenn die Intensität der eintreffenden Strahlung zu hoch ist,
-so sind bereits alle Atome ionsisiert und es folgt eine Verfälschung der Impulsrate.
-Dies wird durch die Totzeit quantifiziert. Die beschreibt, wie lange es dauert bis
-nach einem vergangenem Signal, das nächste Signal aufgenommen werden kann.
-Diesen Fehler kann man durch folgende Formel korrigieren:
-
+\\Die Röntgenstrahlung ist auf zwei Effekt zurückzuführen.
+\subsubsection*{Kontinuierliches Spektrum}
+Beim Auftreffen der Elektronen auf das Anodenmaterial wird dieses ionsisiert, sodass
+ein gebundenes Elektron von einer höheren Schale auf eine niedrigere Schale fallen kann und dabei
+Energie in Form von Röntgenquanten imitiert. Die abgestrahlte Energie entspricht dann der Differenz
+der Energieniveaus.
 \begin{equation}
-    I=\frac{N}{1-\tau \cdot N},
-    \label{eqn:totzeit}
+    h\cdot v=E_m-E_n
 \end{equation}
-dabei ist $N$ die Impulsrate und $\tau$ die Totzeit.
+Das charakteristische Spektrum ist vom Anodenmaterial abhängig und zeichnet sich im
+Röntgenspektrum durch schwarfe Linien aus.
+Für ein Elektron in einem Mehrelektronenatom ergibt sich die Energie durch
+\begin{equation}
+    E_n=-R_{\infty}\cdot z_{eff}^2 \cdot \frac{1}{n^2},
+\end{equation}
+wobei die Rydbergenergie $R_{\infty}=13.6$eV und die effektive Kernladung 
+$z_{eff}=z-\sigma$ mit der Abschirmkonstante $\sigma$ ist.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{plots/chS.png}
+    \caption{Darstellung des Prozesses der Röntenemission durch die
+    Ionisation des Atoms. Das (Röntgen)Photon wirkt als exteren Anregung, welches
+    ein Elektron aus der inneren Schale schlägt. Ein anderes Elektron aus einer
+    höheren Schale rutscht nach und gibt Energie in Form von Strahlung ab.\cite{wiki}}
+\end{figure}
+\subsubsection*{Bremsstrahlung}
+Durch Abbremsen der freien Elektronen in einem Elektrischen Feld 
+wird Energie durch Röntgenquanten frei. Die Energie entspricht dabei
+dem Energieverlust der Abbremsung. Bei vollständiger Abbremsung ergibt
+sich die Wellenlänge
+\begin{equation}
+    \lambda_{min}=\frac{h \cdot c}{e_0U}.
+    \label{eqn:minW}
+\end{equation}
+Da hierbei verschieden hohe kinetische Energien abgegeben werden können,
+äußert siche die Bremsstrahlung im Spektrum durch einen Kontinuierlichen
+Verlauf.
+\subsection{Halbwertsbreite (Full Width at Half Maximum)}
+Die Breite bie halber Höhe (kurz: FWHM) beschreibt "die Differenz zwischen 
+den beiden Argumentwerten, für die die Funktionswerte auf die 
+Hälfte des Maximums abgesunken sind."\cite{wiki2}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{plots/Halbwertsbreite.png}
+    \caption{}
+\end{figure}
+\subsection{Absorbtion}
+Treffen Röntgenstrahlen auf ein Material, so nimmt dieses die Strahlung zum Teil
+auf (Absorbtion). Diese ist zum Teil vom Material, derer Dicke $d$ und der Energie 
+der Strahlung abhängig.
+\begin{equation}
+    \frac{I(d)}{I_0}=e^{-\mu d}=:\tau
+\end{equation}
+Dabei ist $\mu$ der Absorbtionskoeffizient.\\
+Dieser ist abhängig von der Energie der Strahlung und nimmt bei zunehmender
+Strahlungsenergie ab. $\mu$ steigt sprunghaft an, wenn die Strahlungsenergie
+gleich groß der Bindungsenergie eines Elektrons aus der nächsten inneren Schale ist.
+Man spricht von einer Absorbtinskante.
+Für die K-Kante (n=1) ergibt sich nach der Sommerfledschen Feinstrukturformel
+die Abschirmkonstante
+\begin{equation}
+    \sigma_K=Z-\sqrt{\frac{E_K}{R_{\infty}}-\frac{\alpha^2Z^4}{4}}
+\end{equation}
+Bei Strahlungsenergien unterhalb von $1$MeV treten erstmal Compton- und Photoeffekt ein.
+
+
+

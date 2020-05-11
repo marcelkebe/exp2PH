@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  5 MAY 2020 08:56
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  10 MAY 2020 15:14
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multiscript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.115 seconds
+luaotfload | main : initialization completed in 0.119 seconds
 (./header.tex (/home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1605,13 +1605,14 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout3 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (./build/main.bbl)
+Package biblatex Info: ... file 'main.bbl' not found.
+
+No file main.bbl.
 Package biblatex Info: Reference section=0 on input line 27.
 Package biblatex Info: Reference segment=0 on input line 27.
 \AtBeginShipoutBox=\box66
 Package hyperref Info: Link coloring OFF on input line 27.
- (/home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+(/home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/12 v2.45 Cross-referencing by name of section
  (/home/smmakebe/.local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
@@ -1665,94 +1666,54 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 32.
  [2
 
 ] (./content/theorie.tex
-<compton/compton_effekt.jpg, id=56, 495.8525pt x 359.3425pt>
-File: compton/compton_effekt.jpg Graphic file (type jpg)
-<use compton/compton_effekt.jpg>
-Package luatex.def Info: compton/compton_effekt.jpg  used on input line 25.
-(luatex.def)             Requested size: 167.29967pt x 121.24269pt.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 28.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 28.
- [3<./compton/compton_effekt.jpg>]
-<plots/bragg.jpg, id=73, 399.4925pt x 283.0575pt>
+<plots/bragg.jpg, id=18, 399.4925pt x 283.0575pt>
 File: plots/bragg.jpg Graphic file (type jpg)
 <use plots/bragg.jpg>
-Package luatex.def Info: plots/bragg.jpg  used on input line 73.
-(luatex.def)             Requested size: 146.39198pt x 103.72327pt.
- [4<./plots/bragg.jpg>]) (./content/durchfuehrung.tex [5]
-<plots/aufbau.jpg, id=92, 1224.575pt x 642.4pt>
-File: plots/aufbau.jpg Graphic file (type jpg)
-<use plots/aufbau.jpg>
-Package luatex.def Info: plots/aufbau.jpg  used on input line 39.
-(luatex.def)             Requested size: 250.95587pt x 131.64384pt.
-) [6] [7<./plots/aufbau.jpg>] (./content/auswertung.tex
-<plots/welll_int.pdf, id=111, 462.528pt x 346.896pt>
-File: plots/welll_int.pdf Graphic file (type pdf)
-<use plots/welll_int.pdf>
-Package luatex.def Info: plots/welll_int.pdf  used on input line 24.
-(luatex.def)             Requested size: 271.86356pt x 203.90463pt.
-<plots/E_int.pdf, id=112, 462.528pt x 346.896pt>
-File: plots/E_int.pdf Graphic file (type pdf)
-<use plots/E_int.pdf>
-Package luatex.def Info: plots/E_int.pdf  used on input line 35.
-(luatex.def)             Requested size: 271.86356pt x 203.90463pt.
- [8<./plots/welll_int.pdf>]
-<plots/trans.pdf, id=179, 462.528pt x 346.896pt>
-File: plots/trans.pdf Graphic file (type pdf)
-<use plots/trans.pdf>
-Package luatex.def Info: plots/trans.pdf  used on input line 75.
-(luatex.def)             Requested size: 271.86356pt x 203.90463pt.
- [9<./plots/E_int.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 84--90
-
- []
-
-[10<./plots/trans.pdf>]) (./content/diskussion.tex [11]
-Underfull \hbox (badness 10000) in paragraph at lines 4--22
-
- []
+Package luatex.def Info: plots/bragg.jpg  used on input line 19.
+(luatex.def)             Requested size: 125.47794pt x 88.90443pt.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 21.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 21.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--39
+LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 21.
 
- []
 
-) [12] [13] (./content/anhang.tex [14]
-Overfull \hbox (32.25908pt too wide) in paragraph at lines 5--44
- [][] 
- []
+LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 21.
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
- [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
- (./build/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 6DC11C0435985D421BC840EF32101592;14695.
-Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: C5A71D370E0DD39F2E8897B2ED57D667;1632.
-Package logreq Info: Writing requests to 'main.run.xml'.
+<plots/chS.png, id=19, 1284.8pt x 1071.00125pt>
+File: plots/chS.png Graphic file (type png)
+<use plots/chS.png>
+Package luatex.def Info: plots/chS.png  used on input line 42.
+(luatex.def)             Requested size: 167.29967pt x 139.4475pt.
 
-\openout1 = main.run.xml
-)
+LaTeX Warning: Citation 'wiki' on page 3 undefined on input line 46.
+
+
+LaTeX Warning: Citation 'wiki' on page 3 undefined on input line 46.
+
+[3<./plots/bragg.jpg>]
+
+LaTeX Warning: Citation 'wiki2' on page 4 undefined on input line 63.
+
+<plots/Halbwertsbreite.png, id=36, 1027.84pt x 599.23875pt>
+File: plots/Halbwertsbreite.png Graphic file (type png)
+<use plots/Halbwertsbreite.png>
+Package luatex.def Info: plots/Halbwertsbreite.png  used on input line 66.
+(luatex.def)             Requested size: 167.29967pt x 97.53516pt.
+[4<./plots/chS.png><./plots/Halbwertsbreite.png>]) (./content/durchfuehrung.tex [5]
+! Undefined control sequence.
+l.20 im Spektrum liefern dann mit \rec
+                                    {ref} eine Aussgabe üer das Auflösungs...
 
 Here is how much of LuaTeX's memory you used:
- 45054 strings out of 494291
+ 44575 strings out of 494291
  100000,1977958 words of node,token memory allocated
- 792 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 52 attribute, 81 glue_spec, 28 attribute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:2,2:1607,3:155,4:64,5:198,6:41,7:3151,8:115,9:580,10:17,11:353
- 47954 multiletter control sequences out of 65536+600000
- 217 fonts using 81450959 bytes
- 57i,19n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (15 pages, 196003 bytes).
-
-PDF statistics: 483 PDF objects out of 1000 (max. 8388607)
- 294 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 131072)
- 145 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+ 8230 words of node memory still in use:
+   21 hlist, 1 vlist, 2 rule, 50 disc, 6 local_par, 2 dir, 20 math, 147 glue, 25 kern, 23 penalty, 6 margin_kern, 735 glyph, 120 attribute, 76 glue_spec, 62 attribute_list, 1 temp, 3 write, 1 pdf_start_link, 1 pdf_end_link, 3 pdf_dest, 1 pdf_action, 6 pdf_colorstack nodes
+   avail lists: 1:2,2:414,3:84,4:31,5:137,6:14,7:1607,8:31,9:153,10:9,11:227
+ 47671 multiletter control sequences out of 65536+600000
+ 113 fonts using 41696635 bytes
+ 57i,8n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!
