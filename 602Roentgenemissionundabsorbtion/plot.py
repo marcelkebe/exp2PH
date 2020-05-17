@@ -239,12 +239,14 @@ plt.ylabel(r"$\sqrt{E_K}$ in $\sqrt{eV}$")
 plt.legend(loc = "best")
 plt.savefig("Moseley.pdf")
 plt.close()
-Ryd_lin=unparams[0]**2/h
+Ryd_lin=unparams[1]**2/h
 print(f"""
+Geradenparameter: Steigung={unparams[1]},yAch={unparams[0]}
 Ry-Frequenz:{Ryd_lin}
 Ry-Energie:{Ryd_lin*h/e}eV
 Ry-Konstante:{Ryd_lin/c}""")
-
+dRyE=abs(Ryd_lin*h/e-13.605)/13.605*100
+print(f"delta Ryd_ENergie={dRyE}%")
 print(f"""
 BraggPrüfung max
 Winkel=28.2°\tWelll={(2*d*sin(28.2/360*2*np.pi))}\tEnergie={getEnergiefrombragg(28.2)/1000}

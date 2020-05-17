@@ -12,6 +12,7 @@ der zugehörige Braggwinkel $\Theta_{\text{max}}$ und die Wellenlänge $\lambda_
     \includegraphics[width=0.7\textwidth]{plots/messdaten1.pdf}
     \caption{Die Intensitätsratenverteilung bei einem festen Kristallwinkel
     von $\Theta=14$° und mit varrierenden Geiger-Müller-Winkel $\Theta_{\text{GM}}$ mit makierten Maximum.}
+    \label{fig:spektrums}
 \end{figure}
 Für das Emissionspektrum der Kupfer-Röntgenröhre ergibt sich
 \begin{figure}[H]
@@ -20,18 +21,19 @@ Für das Emissionspektrum der Kupfer-Röntgenröhre ergibt sich
     \caption{Das Spektrum der Kupferanode. Dabei ist der erste Peak (in grün)
     die $K_{\beta}$ und der zweite Peak (in gelb) die $K_{\alpha}$ 
     Linie.}
+    \label{fig:peaks}
 \end{figure}
 mit den Halbwertsbreiten an den Energien $E_K$ und dessen Halbwertsenenergien $\Delta E_{FWHM}$
 
 Damit ergibt sich das Auflösungsvermögen $A$ über
 \begin{equation}
-    A=\frac{E_K}{\Delta E_{FWHM}}.
+    A=\frac{E_K}{\Delta E_{\text{FWHM}}}.
 \end{equation}
 \begin{table}[H]
     \centering
     \begin{tabular}{c | c c c c}
         \toprule
-        & $E_K\;/\;\si{keV}$ & HB$\;/\;$pm & HE $\Delta E_{FMWH}\;/\;$eV&$A$\\
+        & $E_K\;/\;\si{keV}$ & HB$\;/\;$pm & HE $\Delta E_{\text{FMWH}}\;/\;$eV&$A$\\
         \midrule
         $K_{\alpha}$ & 8.05 & 14.99 & 165.76 &48.56\\
         $K_{\beta}$  & 8.92 & 3.24  & 205.74 &43.36\\
@@ -42,12 +44,12 @@ Damit ergibt sich das Auflösungsvermögen $A$ über
     \label{tab:tabelle1}
 \end{table}
 \subsection{Abschirmzahl}
-Die Abschirmkonstanten $\sigma$ ergeben sich über Gl. \ref{eqn:sigma} mit $E_{\text{abs}}=8980\si{eV}$
+Die Abschirmkonstanten $\sigma$ ergeben sich über Gl. \ref{eqn:sigma} mit $E_{\text{abs}}=8980\si{eV}$\cite{anleitung}
 und $E_{\alpha}$ und $E_{\beta}$ aus Tabelle \ref{tab:tabelle1} zu
 \begin{align*}
-    \sigma_1=&3.32,\\
-    \sigma_2=&12.47,\\
-    \sigma_3=&22.7.\\
+    \sigma_{K1}=&3.32,\\
+    \sigma_{K2}=&12.47,\\
+    \sigma_{K3}=&22.7.\\
 \end{align*}
 \subsection{Absorber}
 Nun werden die Absorber mit dem MAterial Brom, Zink, Rubidium, Gallium, Rubidium und Strontium
@@ -74,7 +76,6 @@ Die Materiale haben folgende Kenngrößen
     $\sigma_K$: Abschirmkonstante}
     \label{tab:kenngroesse}
 \end{table}
-\subsubsection{Brom}
 Über das Intensitätsmaximum $I_K^{max}$ und das Intensitätsminimum $I_K^{min}$
 wird mit
 \begin{equation}
@@ -89,7 +90,7 @@ Es ergibt sich:
     \centering
     \begin{tabular}{c | c c c c c c}
         \toprule
-        &$\Theta\;/\;$° & $E_{K,abs}\,/\;$keV & $I_K^{min}\;/\;\frac{Imp}{s}$ & $I_K^{max}\;/\;\frac{Imp}{s}$ & $I_K\;/\;\frac{Imp}{s}$ & $\sigma_K$\\
+        &$\Theta\;/\;$° & $E_{\text{K,abs}}\,/\;$keV & $I_K^{\text{min}}\;/\;\frac{Imp}{s}$ & $I_K^{\text{max}}\;/\;\frac{Imp}{s}$ & $I_K\;/\;\frac{Imp}{s}$ & $\sigma_K$\\
         \midrule
         Brom & 13.2 & 13.49 & 9.0 & 27.0 & 18.0 & 3.84\\
         Zink & 18.7 & 9.61 & 55.0 & 102.0 & 78.5 & 3.64\\
@@ -102,6 +103,32 @@ Es ergibt sich:
     \caption{Die Lage der Absorbtionskante und Absorbtionsenergie $E_{K,abs}$ von Brom.
         Sowie die zugehörigen Intensitäten $I_K^{min}$,$I_K^{max}$,$I_K$ und die Abschirmkonstante $\sigma$.}
 \end{table}
-
+\newpage
+Mithilfe Gl. \ref{eqn:mos} kann nun über eine Ausgleichsgerade
+\begin{equation}
+        \sqrt{E_K}=A\cdot Z +B
+\end{equation}
+mit
+\begin{align}
+    A=\sqrt{R\cdot h}&&B=-\sigma
+    \label{eqn:Ry}
+\end{align}
+die Rydbergfrequenz $R$ nach \ref{eqn:Ry} bestimmt werden.
+Für die Paramter der Ausgleichsgeraden ergibt sich
+\begin{align*}
+    B&=(-3.4\pm 0.4)\cdot 10^{-9}\sqrt{\si{eV}}\\
+    A&=(1.432\pm 0.012) 10^{-9}\sqrt{\si{eV}}\\
+\end{align*}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{plots/Moseley.pdf}
+    \caption{}
+\end{figure}
+Es folgt somit für die Rydbergfrequenz,Rydbergkonstante, Rydbergenergie
+\begin{align}
+    R_{\text{Frequenz}}&=\frac{A^2}{h}=(3.05\pm 0.05)\cdot 10^{15}\si{Hz}\\
+    R_{\text{Energie}}&=R_{\infty}=\frac{R_{\text{Frequenz}}\cdot h}{e}=(12.63\pm 0.22)\si{eV}\\
+    R_{\text{Konstant}}&=\frac{R_{\text{Frequenz}}}{c}=(1.018\pm 0.018)\cdot 10^7\frac{1}{m}
+\end{align}
 
 \label{sec:Auswertung}
