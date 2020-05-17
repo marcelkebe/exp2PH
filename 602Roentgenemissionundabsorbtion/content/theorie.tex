@@ -10,10 +10,10 @@ Die Energie der Strahlung kann mithilfe der Bragg-Reflexion ermittelt werden.
 Durch Beugung an einem dreidimsensionalen Gitter (LiF-Kristall) mit der Gitterkonstante $d$ 
 entsteht eine konstruktive Interferenz bei einem Braggwinkel $\Theta$. Durch die Bragg-Bedingung
 \begin{equation}
-    2 d sin(\Theta)=n\lambda,
+    2 d \sin(\Theta)=n\lambda,
     \label{eqn:bragg}
 \end{equation}
-ergibt sich die Wellenlänge. n ist dabei die Beugungsordunung.
+ergibt sich die Wellenlänge $\lambda$. n ist dabei die Beugungsordunung.
 \begin{figure}
     \centering
     \includegraphics[width=0.3\textwidth]{plots/bragg.jpg}
@@ -21,7 +21,9 @@ ergibt sich die Wellenlänge. n ist dabei die Beugungsordunung.
     Gitterkonstante $d$ und dem Bragg-Winkel $\alpha$.\cite[3]{anleitung}}
 \end{figure}
 \\Die Röntgenstrahlung ist auf zwei Effekt zurückzuführen.
-\subsubsection*{Kontinuierliches Spektrum}
+
+
+\subsubsection*{Charakteristisches Spektrum}
 Beim Auftreffen der Elektronen auf das Anodenmaterial wird dieses ionsisiert, sodass
 ein gebundenes Elektron von einer höheren Schale auf eine niedrigere Schale fallen kann und dabei
 Energie in Form von Röntgenquanten imitiert. Die abgestrahlte Energie entspricht dann der Differenz
@@ -33,10 +35,11 @@ Das charakteristische Spektrum ist vom Anodenmaterial abhängig und zeichnet sic
 Röntgenspektrum durch schwarfe Linien aus.
 Für ein Elektron in einem Mehrelektronenatom ergibt sich die Energie durch
 \begin{equation}
-    E_n=-R_{\infty}\cdot z_{eff}^2 \cdot \frac{1}{n^2},
+    E_n=-R_{\infty}\cdot z_{\text{eff}}^2 \cdot \frac{1}{n^2},
 \end{equation}
 wobei die Rydbergenergie $R_{\infty}=13.6$eV und die effektive Kernladung 
-$z_{eff}=z-\sigma$ mit der Abschirmkonstante $\sigma$ ist.
+$z_{eff}=z-\sigma$ mit der Abschirmkonstante $\sigma$ ist. Dabei wird berücksichtigt,
+dass die Hüllenelektronen die Coulomb Anziehung auf das äußere Elektron abschirmen.
 \begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{plots/chS.png}
@@ -45,6 +48,7 @@ $z_{eff}=z-\sigma$ mit der Abschirmkonstante $\sigma$ ist.
     ein Elektron aus der inneren Schale schlägt. Ein anderes Elektron aus einer
     höheren Schale rutscht nach und gibt Energie in Form von Strahlung ab.\cite{wiki}}
 \end{figure}
+
 \subsubsection*{Bremsstrahlung}
 Durch Abbremsen der freien Elektronen in einem Elektrischen Feld 
 wird Energie durch Röntgenquanten frei. Die Energie entspricht dabei
@@ -82,7 +86,20 @@ Für die K-Kante (n=1) ergibt sich nach der Sommerfledschen Feinstrukturformel
 die Abschirmkonstante
 \begin{equation}
     \sigma_K=Z-\sqrt{\frac{E_K}{R_{\infty}}-\frac{\alpha^2Z^4}{4}}
+    \label{eqn:sigmaZ}
 \end{equation}
+Da die Elektronen in einer Schale nicht alle die selbe potenzielle Energie
+besitzen spalten sich die Hauptkanten auf in eng an einanerliegene Linien (Feinstrukturen),
+diese werden im folgenden allerdings nicht weiter aufgelöst.\\
+So folgt für eine Abschätzung der Abschirmkonstanten $\sigma$ für Kupfer
+mit $n=1$,$m=2$ und $l=3$,
+\begin{align}
+    \sigma_1 &= Z-\sqrt{\frac{E_{K,abs}}{R}},\\
+    \sigma_2 &= Z-\sqrt{4\cdot (Z-\sigma_1)^2-\frac{4E_{K\alpha}}{R}}, \\
+    \sigma_3 &= Z-\sqrt{9\cdot(Z-\sigma_1)^2-\frac{9E_{K\beta}}{R}} .
+    \label{eqn:sigma}
+\end{align}
+
 Bei Strahlungsenergien unterhalb von $1$MeV treten erstmal Compton- und Photoeffekt ein.
 
 
