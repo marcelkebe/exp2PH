@@ -1,0 +1,18 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Erzeugung Röntgenstrahlung}{3}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Halbwertsbreite (Full Width at Half Maximum)}{4}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Absorbtion}{4}{subsection.1.3}% 
+\contentsline {section}{\numberline {2}Durchführung}{6}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Bragg-Bedingung}{6}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Emissionsspektrum}{6}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Absorbtionsspektrum}{6}{subsection.2.3}% 
+\contentsline {section}{\numberline {3}Auswertung}{7}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Emissionsspektrum Kupfer-Röntgenröhre}{7}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Abschirmzahl}{8}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Absorber}{9}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Brom}{9}{subsubsection.3.3.1}% 
+\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}% 
+\contentsline {section}{\nonumberline Literatur}{11}{section*.13}% 
+\contentsline {section}{\numberline {5}Anhang}{12}{section.5}% 
