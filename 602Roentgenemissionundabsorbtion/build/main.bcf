@@ -2134,10 +2134,22 @@
     <bcf:citekey order="2">anleitung</bcf:citekey>
     <bcf:citekey order="3">wiki</bcf:citekey>
     <bcf:citekey order="4">wiki</bcf:citekey>
-    <bcf:citekey order="5">wiki2</bcf:citekey>
+    <bcf:citekey order="5">anleitung</bcf:citekey>
     <bcf:citekey order="6">anleitung</bcf:citekey>
-    <bcf:citekey order="7">ref</bcf:citekey>
-    <bcf:citekey order="8">ref</bcf:citekey>
+    <bcf:citekey order="7">anleitung</bcf:citekey>
+    <bcf:citekey order="8">anleitung</bcf:citekey>
+    <bcf:citekey order="9">wiki2</bcf:citekey>
+    <bcf:citekey order="10">wiki2</bcf:citekey>
+    <bcf:citekey order="11">wiki2</bcf:citekey>
+    <bcf:citekey order="12">anleitung</bcf:citekey>
+    <bcf:citekey order="13">anleitung</bcf:citekey>
+    <bcf:citekey order="14">anleitung</bcf:citekey>
+    <bcf:citekey order="15">Absorptionskanten</bcf:citekey>
+    <bcf:citekey order="16">Absorptionskanten</bcf:citekey>
+    <bcf:citekey order="17">Absorptionskanten</bcf:citekey>
+    <bcf:citekey order="18">Absorptionskanten</bcf:citekey>
+    <bcf:citekey order="19">Absorptionskanten</bcf:citekey>
+    <bcf:citekey order="20">Absorptionskanten</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

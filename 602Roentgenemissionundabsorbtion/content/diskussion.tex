@@ -6,14 +6,30 @@ befindet sich bei $\Theta=28.2°$.\\
 Das Intensitätsmaximum der reflektierten Röntgenstrahlung wird beim Bragg-Winkel relativ
 zum LiF-Kristall erwartet. Es befindet sich somit bei dem doppelten Winkel von $\Theta=14°$, also $28$° 
 zum Strahl. Somit weicht das gemessene Maximum um $0.2°$ (0.7\%) von der theoretischen Lage ab.
-
-
+Würde die gemessene Position des Maximums mehr als 3° von der theoretischen Lage abweichen, so
+würde sich dies als eine Verschiebung in den nachfolgenden Spektren deutlich machen, da somit auch alle Energie
+um einen Faktor verschoben werden.
 
 In Abb. \ref{fig:peaks} zeigt sich das Bremsspektrum über den gesamten Messbereich mit
 den zusätlichen Peaks der charakteristischen Strahlung. Die maximale Energie des Bremsberges
-kann dabei nicht bestimmt werden, da der Messbereich zu klein ist und somit  $\lambda_{min}$ nicht 
-gemessen wird.
+kann dabei nicht bestimmt werden, da der Messbereich zu klein ist und somit  $\lambda_{min}$ 
+nicht gemessen wird. Nach Gl. \ref{eqn:bragg} wäre der Braggwinkel $\Theta$ zu $\lambda_{min}$ Gl. \ref{eqn:minW}
+\begin{align*}
+    \lambda_{min}&=35.4\si{pm},\\
+    \Theta&=5.04°,
+\end{align*}
+dieser liegt außerhalb des Messbereichs.\\
+Das Auflösungsvermögen $A$ (vgl. Tab. \ref{tab:tabelle1}) benötigt keine Einbeziehung von statistischen
+Fehler und repräsentiert die Auflösung gut.\\
 
+
+In Tabelle \ref{tab:vergleich} wird deutlich, dass die Messungen für die verschiedenen
+$E_K$ und Abschirmkonstanten $\sigma_K$ die Theorie gut wiederspiegeln, da die 
+Abweichungen vom Literaturwert unterhalb von 5\% liegen.\\
+Lediglich die Ryberg-Konstante weicht mehr von dem Literaturwert ab. Dies ist darauf zurückzuführen,
+dass die $\sqrt{E_K}$ gegen die Ordnungzahl $Z$ aufgetragen wurde. Ein kleiner Abweichung
+könnte beim Auftagen gegen $z_{\text{eff}}$ erziehlt werden.\\
+Dennoch ist die Abweichung klein genug um die Theorie zu bestätigen.  
 \begin{table}[H]
     \centering
     \begin{tabular}{c | c c c}
@@ -42,5 +58,7 @@ gemessen wird.
         $\text{R}_{\infty}\;/\;$ eV & 12.63$\pm$0.22 & 13,61& 7.1$\pm$1.6 \\
         \bottomrule
     \end{tabular}
-    \caption{}
+    \caption{Alle berechneten/ausgelesenen Energien $E_K$ und die Abschirmkonstanten $sigma_K$
+    im Vergleich mit den Literaturwerten \cite{Absorptionskanten} und mit prozentualer Abweichung.}
+    \label{tab:vergleich}
 \end{table}

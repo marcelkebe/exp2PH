@@ -5,7 +5,7 @@ Für das Spektrum der Kupfer-Röntgenröhre ergibt sich, das gemessenen
 Intensitätsmaximum bei $I_{\text{max}}=218\;$Imp/s, dafür ergibt sich
 der zugehörige Braggwinkel $\Theta_{\text{max}}$ und die Wellenlänge $\lambda_{\text{max}}$
 \begin{align*}
-    \Theta_{\text{max}}=28.2° && \lambda_{\text{max}}=190.3\si{pm}&&E_{\text{max}}=6.52\si{keV}
+    \Theta_{\text{max}}=28.2°, && \lambda_{\text{max}}=190.3\si{pm},&&E_{\text{max}}=6.52\si{keV}.
 \end{align*}
 \begin{figure}[H]
     \centering
@@ -14,7 +14,10 @@ der zugehörige Braggwinkel $\Theta_{\text{max}}$ und die Wellenlänge $\lambda_
     von $\Theta=14$° und mit varrierenden Geiger-Müller-Winkel $\Theta_{\text{GM}}$ mit makierten Maximum.}
     \label{fig:spektrums}
 \end{figure}
-Für das Emissionspektrum der Kupfer-Röntgenröhre ergibt sich
+\newpage
+\subsection{Emissionspektrum}
+Für das Emissionspektrum der Kupfer-Röntgenröhre ergibt sich mit Gl. \ref{eqn:bragg} die 
+Wellenlänge $\lambda$ zu den Braggwinkeln $\Theta$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{plots/spektrum.pdf}
@@ -23,9 +26,8 @@ Für das Emissionspektrum der Kupfer-Röntgenröhre ergibt sich
     Linie.}
     \label{fig:peaks}
 \end{figure}
-mit den Halbwertsbreiten an den Energien $E_K$ und dessen Halbwertsenenergien $\Delta E_{FWHM}$
-
-Damit ergibt sich das Auflösungsvermögen $A$ über
+Mit den Halbwertsbreiten (vgl. Abs \ref{subsec:halbwert}) und den Energien $E_K$ und dessen Halbwertsenenergien $\Delta E_{\text{FWHM}}$
+ergibt sich das Auflösungsvermögen $A$ über
 \begin{equation}
     A=\frac{E_K}{\Delta E_{\text{FWHM}}}.
 \end{equation}
@@ -40,7 +42,7 @@ Damit ergibt sich das Auflösungsvermögen $A$ über
         \bottomrule
     \end{tabular}
     \caption{Darstellung der Energien am Peak $E_K$ mit den zugehörigen Halbwertsbreiten
-    HB, den Halbwertsenergien HE und dem Auflösungsverfögen $A$}
+    HB, den Halbwertsenergien HE und dem Auflösungsvermögen $A$}
     \label{tab:tabelle1}
 \end{table}
 \subsection{Abschirmzahl}
@@ -52,9 +54,9 @@ und $E_{\alpha}$ und $E_{\beta}$ aus Tabelle \ref{tab:tabelle1} zu
     \sigma_{K3}=&22.7.\\
 \end{align*}
 \subsection{Absorber}
-Nun werden die Absorber mit dem MAterial Brom, Zink, Rubidium, Gallium, Rubidium und Strontium
+Nun werden die Absorber mit dem Material Brom, Zink, Rubidium, Gallium, Rubidium und Strontium
 zwischen den LiF-Kristall und den Geiger-Müller-Zähler gestellt.
-Die Materiale haben folgende Kenngrößen
+Die Materiale haben folgende Kenngrößen.
 \begin{table}
     \centering
     \begin{tabular}{c | c c c c}
@@ -69,23 +71,27 @@ Die Materiale haben folgende Kenngrößen
         Zr & 40 & 17.99 & 9.6 & 4.11\\
         \bottomrule
     \end{tabular}
-    \caption{Kenngrößen zu den verschiedenen Absorbermaterialien.\cite{ref}\\
+    \caption{Kenngrößen zu den verschiedenen Absorbermaterialien.\cite{Absorptionskanten}\\
     $Z$: Ordnungszahl\\
-    $E_K^{Lit}$: Literaturwert der K-Kante\\
+    $E_K^{Lit}$: Literaturwert der K-Kante\cite{Absorptionskanten}\\
     $\Theta_K^{Lit}$: Braggwinkel zu $E_K^{Lit}$\\
     $\sigma_K$: Abschirmkonstante}
     \label{tab:kenngroesse}
 \end{table}
-Über das Intensitätsmaximum $I_K^{max}$ und das Intensitätsminimum $I_K^{min}$
-wird mit
+
+Zunächst wird die Impulsrate der einzelnen Absorbermaterialien gegen den zugehörigen
+Bragg-Winkel augetragen (siehe Abs. \ref{sec:anhang}).\\ Aus diesen Absorbtionsspektren, welche die K-Kanten enthalten, können
+die zugehörigen Energien $E_K$ bestimmt werden.\\
+Die Mitte der K-Kante wird der Intensität $I_K$ zugeordnet, die sich
+über die Mitte zwischen dem Intensitätsmaximum und Minimum definiert
 \begin{equation}
-    I_K=I_K^{min}+\frac{I_K^{max}-I_K^{min}}{2}
+    I_K=I_K^{min}+\frac{I_K^{max}-I_K^{min}}{2},
     \label{eqn:intensität}
 \end{equation}
-die Mitte der K-Kante gewählt. Über den zugehörigen Winke $\Theta$ kann nun mit
-Gl. \ref{eqn:bragg} die Absibrtionenergie $E_{K,abs}$ der K-Kante ermittelt werden.
-Weitergehen folgt nach Gl. \ref{eqn:sigmaZ} die Abschirmkonstante $\sigma_K$.\\
-Es ergibt sich:
+Über den zugehörigen Winkel $\Theta$ kann nun mithilfe der zugehörigen Wellenlänge
+Gl. \ref{eqn:bragg} die Absorbtionsenergie $E_{K,abs}$ der K-Kante ermittelt werden.
+Weiterführend folgt daraus nach Gl. \ref{eqn:sigmaZ} die K-Schlalen zugehörigen Abschirmkonstante $\sigma_K$.\\\\
+Es ergibt sich für die verschiedenen Absorbermaterialien:
 \begin{table}
     \centering
     \begin{tabular}{c | c c c c c c}
@@ -106,29 +112,30 @@ Es ergibt sich:
 \newpage
 Mithilfe Gl. \ref{eqn:mos} kann nun über eine Ausgleichsgerade
 \begin{equation}
-        \sqrt{E_K}=A\cdot Z +B
+        \sqrt{E_K}=A\cdot Z +B,
 \end{equation}
 mit
 \begin{align}
-    A=\sqrt{R\cdot h}&&B=-\sigma
+    A=\sqrt{R\cdot h},
     \label{eqn:Ry}
 \end{align}
-die Rydbergfrequenz $R$ nach \ref{eqn:Ry} bestimmt werden.
+die Rydbergfrequenz $R$ nach Gl. \ref{eqn:Ry} bestimmt werden.
 Für die Paramter der Ausgleichsgeraden ergibt sich
 \begin{align*}
-    B&=(-3.4\pm 0.4)\cdot 10^{-9}\sqrt{\si{eV}}\\
-    A&=(1.432\pm 0.012) 10^{-9}\sqrt{\si{eV}}\\
+    B&=(-3.4\pm 0.4)\cdot 10^{-9}\sqrt{\si{eV}},\\
+    A&=(1.432\pm 0.012) 10^{-9}\sqrt{\si{eV}}.\\
 \end{align*}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{plots/Moseley.pdf}
-    \caption{}
+    \caption{$\sqrt{E_K}$ gegen die Ordnungzahl $Z$ der verschiedenen Absorbermaterialien
+    aufgetragen. Aus der Steigung kann nun eine Aussage über die Rydberg-Konstant getroffen werden.}
 \end{figure}
-Es folgt somit für die Rydbergfrequenz,Rydbergkonstante, Rydbergenergie
-\begin{align}
-    R_{\text{Frequenz}}&=\frac{A^2}{h}=(3.05\pm 0.05)\cdot 10^{15}\si{Hz}\\
-    R_{\text{Energie}}&=R_{\infty}=\frac{R_{\text{Frequenz}}\cdot h}{e}=(12.63\pm 0.22)\si{eV}\\
-    R_{\text{Konstant}}&=\frac{R_{\text{Frequenz}}}{c}=(1.018\pm 0.018)\cdot 10^7\frac{1}{m}
-\end{align}
+Es folgt somit für die Rydbergfrequenz, Rydbergkonstante, Rydbergenergie
+\begin{align*}
+    R_{\text{Frequenz}}&=\frac{A^2}{h}=(3.05\pm 0.05)\cdot 10^{15}\si{Hz},\\
+    R_{\text{Energie}}&=R_{\infty}=\frac{R_{\text{Frequenz}}\cdot h}{e}=(12.63\pm 0.22)\si{eV},\\
+    R_{\text{Konstant}}&=\frac{R_{\text{Frequenz}}}{c}=(1.018\pm 0.018)\cdot 10^7\frac{1}{m}.
+\end{align*}
 
 \label{sec:Auswertung}
