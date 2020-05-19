@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  18 MAY 2020 18:34
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  19 MAY 2020 09:09
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multiscript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.110 seconds
+luaotfload | main : initialization completed in 0.185 seconds
 (./header.tex (/home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/smmakebe/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1781,7 +1781,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: D9E5FDDA22EB45128E51AD4E8C82B54E;21148.
+(rerunfilecheck)             Checksum: A0CD3B0AE17FE6A598DECDF3EC8AD911;21148.
 Package rerunfilecheck Info: File `main.toc' has not changed.
 (rerunfilecheck)             Checksum: 51AB0DEBA82A61EDA8FA1BE71871109F;1821.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1794,12 +1794,12 @@ Here is how much of LuaTeX's memory you used:
  100000,1977958 words of node,token memory allocated
  876 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 76 attribute, 81 glue_spec, 40 attribute_list, 1 write, 5 pdf_action nodes
-   avail lists: 1:4,2:1232,3:227,4:71,5:200,6:51,7:3280,8:143,9:375,10:8,11:282
+   avail lists: 1:4,2:1232,3:227,4:71,5:200,6:51,7:3282,8:143,9:375,10:8,11:283
  47899 multiletter control sequences out of 65536+600000
- 162 fonts using 59730403 bytes
+ 162 fonts using 59730907 bytes
  57i,16n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/smmakebe/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (25 pages, 462751 bytes).
+Output written on main.pdf (25 pages, 462803 bytes).
 
 PDF statistics: 879 PDF objects out of 1000 (max. 8388607)
  474 compressed objects within 5 object streams
