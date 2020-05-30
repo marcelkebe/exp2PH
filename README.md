@@ -1,2 +1,3 @@
 # exp2PH
-Experimentelle Übungen II, Wiederholungsaufgaben
+Experimentelle Übungen II
+Wiederholungsaufgaben, Protokolle
